@@ -2,7 +2,7 @@
 
 import numpy as np
 import pandas as pd
-from scipy.stats import fisher_exact, pearsonr
+from scipy.stats import pearsonr
 
 
 encounters = pd.read_parquet(
@@ -18,6 +18,6 @@ two = two.pivot_table(index=["pc_name", "pf_name"],
     values="has_syn",
     )
 
-### compute correlation
+### EXAMPLE: compute correlation
 corr = two[0].corr(two[1])
 print(f"Pearson R: {corr}")
