@@ -13,5 +13,5 @@ G_AB_touch = nx.read_graphml("htem/PF_PC/connectivity_analysis/graphs/G_AB_con.g
 node_types = nx.get_node_attributes(G_con, "type")
 
 PC_set  = [n for n, t in node_types.items() if t == "pc"]
-gPF_set  = [n for n, t in node_types.items() if t == "gpf"] #parallel fibers of local granule cells
-AB_set = [n for n, t in node_types.items() if t == "local_grc"] #ascending branches of local granule cells
+GPF_set  = [n for n, t in node_types.items() if t == "gpf"] #parallel fibers of local granule cells
+AB_set = [n for n, t in node_types.items() if t == "ab"] #ascending branches of local granule cells
