@@ -26,4 +26,5 @@ con_probs = [
     for pc in PC_set
     ]
 
-print("PF-PC connection probability: ", np.mean(con_probs))
+mean_prob = np.mean(con_probs)
+print(f"PF-PC connection probability: {mean_prob}")
