@@ -20,4 +20,4 @@ two = two.pivot_table(index=["pc_name", "pf_name"],
 
 ### compute correlation
 corr = two[0].corr(two[1])
-print(f"Pearson R: {corr:.3f}")
+print(f"Pearson R: {corr}")
