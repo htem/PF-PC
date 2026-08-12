@@ -9,7 +9,7 @@ encounters = pd.read_parquet(
     "htem/PF_PC/connectivity_analysis/graphs/encounter_table.parquet"
     )
 
-# fetch pairs with two encounters
+### fetch pairs with two encounters
 counts = encounters.groupby(["pc_name", "pf_name"])["number"].transform("size")
 two = encounters[counts == 2]
 
@@ -18,6 +18,6 @@ two = two.pivot_table(index=["pc_name", "pf_name"],
     values="has_syn",
     )
 
-# compute correlation
+### compute correlation
 corr = two[0].corr(two[1])
 print(f"Pearson R: {corr:.3f}")
