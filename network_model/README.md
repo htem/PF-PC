@@ -1,5 +1,6 @@
-This directory contains minimal example scripts of
-1) subsampling ensemble classification tasks
-2) subsampling ensemble Ridge regression tasks
-3) subsampling ensemble online regression tasks
-4) computing the weight distribution of sign-constrained perceptrons at storage capacity
+This directory provides minimal example scripts demonstrating:
+
+Subsampling ensemble classification
+Subsampling ensemble Ridge regression
+Subsampling ensemble online regression
+Weight-distribution analysis for sign-constrained perceptrons at storage capacity
